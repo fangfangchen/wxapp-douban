@@ -1,0 +1,26 @@
+/* pages/detail/detail.wxss */
+.detail {
+  color: #aaa;
+  font-size: 32rpx;
+  margin: 30rpx 50rpx;
+}
+
+.detail image {
+  width: 100%;
+}
+
+.title {
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.detail-text {
+  margin-top: 20rpx;
+}
+
+.summary {
+  margin-top: 60rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #323232;
+}

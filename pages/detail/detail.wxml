@@ -1,0 +1,29 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <image src="{{data.images.large}}" mode="aspectFit"></image>
+
+  <view class="title detail-text">
+    <text>{{data.title}}</text>
+  </view>
+
+  <view class="detail-text">
+    <text>评分：{{data.rating.average}}</text>
+  </view>
+
+  <view class="detail-text">
+    <text>导演：</text>
+    <text wx:for="{{data.directors}}" wx:key="{{index}}">{{item.name}}  </text>
+  </view>
+  
+  <view class="detail-text">
+    <text>主演：</text>
+    <text wx:for="{{data.casts}}" wx:key="{{index}}">{{item.name}}  </text>
+  </view>
+
+  <view>
+    <view class="summary">摘要：</view>
+    <view class="detail-text">
+      <text>{{data.summary}}</text>
+    </view>
+  </view>
+</view>

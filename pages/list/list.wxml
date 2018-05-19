@@ -2,7 +2,7 @@
 <!-- <text>Hello</text> -->
 <view>
   <view class="list-title">{{ name }}</view>
-  <view wx:for="{{ lists }}" wx:key="{{index}}" class="list-item">
+  <navigator wx:for="{{ lists }}" wx:key="{{index}}" class="list-item"  url="../detail/detail?id={{item.id}}">
     <view class="item-left">
       <image src="{{ item.images.small }}"></image>
       <view class="item-info">
@@ -12,7 +12,7 @@
       </view>
     </view>
     <view class="item-average">{{ item.rating.average }}</view>
-  </view>
+  </navigator>
   <view class="loading">
     <text>{{subtitle}}</text>
   </view>
