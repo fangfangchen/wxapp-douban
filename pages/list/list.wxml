@@ -1,0 +1,19 @@
+<!--pages/list/list.js.wxml-->
+<!-- <text>Hello</text> -->
+<view>
+  <view class="list-title">{{ name }}</view>
+  <view wx:for="{{ lists }}" wx:key="{{index}}" class="list-item">
+    <view class="item-left">
+      <image src="{{ item.images.small }}"></image>
+      <view class="item-info">
+        <view class="item-title" wx:if="{{ item.title }}">{{ item.title }}</view>
+        <view class="item-time" wx:if="{{ item.mainland_pubdate }}">上映时间：{{ item.mainland_pubdate }}</view>
+        <view class="item-director" wx:if="{{ item.directors[0].name }}">导演：{{ item.directors[0].name }}</view>
+      </view>
+    </view>
+    <view class="item-average">{{ item.rating.average }}</view>
+  </view>
+  <view class="loading">
+    <text>{{subtitle}}</text>
+  </view>
+</view>

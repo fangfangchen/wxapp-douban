@@ -1,0 +1,9 @@
+<!--pages/splash/splash.wxml-->
+<swiper indicator-dots="{{ true }}" autoplay="{{true}}" interval="{{8000}}" duration="{{ 1000 }}" class="splash-swiper">
+  <block wx:for="{{ moives }}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{ item.images.large }}" class="slide-image" />
+      <button bindtap="start" class="start-btn" wx:if="{{ index >= moives.length - 1 }}">立即体验</button>
+    </swiper-item>
+  </block>
+</swiper>

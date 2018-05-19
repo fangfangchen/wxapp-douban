@@ -1,0 +1,44 @@
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.board-list {
+  padding: 30rpx;
+}
+
+.board-colleation {
+  font-size: 22px;
+  margin: 20rpx 0;
+}
+
+.board-tips {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 30rpx;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  color: #323232;
+}
+
+.board-item {
+  display: flex;
+  flex: 1;
+  border: 1rpx solid #eee;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  cursor: pointer;
+}
+
+.board-item text {
+  flex: 1;
+}
+
+.board-item image {
+  width: 40rpx;
+  height: 40rpx;
+}
