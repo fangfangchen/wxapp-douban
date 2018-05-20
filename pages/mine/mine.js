@@ -13,12 +13,6 @@ Page({
         time: '2018-05-12',
         link: ''
       }, {
-        id: 1,
-        url: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2517753454.jpg',
-        name: '复仇者联盟3：无限战争',
-        time: '2018-05-12',
-        link: ''
-      }, {
         id: 2,
         url: 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2516578307.jpg',
         name: '头号玩家',

@@ -7,21 +7,22 @@
   </view>
 
   <view class="detail-text">
-    <text>评分：{{data.rating.average}}</text>
+    <text wx:if="{{data.rating.average}}">评分：{{data.rating.average}}</text>
+    <text wx:else>评分：未评分</text>
   </view>
 
   <view class="detail-text">
-    <text>导演：</text>
+    <text wx:if="{{data.directors.length}}">导演：</text>
     <text wx:for="{{data.directors}}" wx:key="{{index}}">{{item.name}}  </text>
   </view>
   
   <view class="detail-text">
-    <text>主演：</text>
+    <text wx:if="{{data.casts.length}}">主演：</text>
     <text wx:for="{{data.casts}}" wx:key="{{index}}">{{item.name}}  </text>
   </view>
 
   <view>
-    <view class="summary">摘要：</view>
+    <view class="summary" wx:if="{{data.summary}}">摘要：</view>
     <view class="detail-text">
       <text>{{data.summary}}</text>
     </view>

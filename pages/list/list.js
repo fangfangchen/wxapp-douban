@@ -7,8 +7,9 @@ Page({
    */
   data: {
     lists: [],
-    name: "",
+    name: 'Ops，出错啦～',
     type: 'in_theaters',
+    query: '',
     page: 1,
     size: 20,
     hasMore: true,
@@ -26,9 +27,9 @@ Page({
     this.setData({
       subtitle: '加载中......',
     });
-
+    const param = this.data.type === 'search' ? `/search?q=${this.data.query}` : this.data.type;
     douban
-      .find(this.data.type, this.data.page++, this.data.size)
+      .find(param, this.data.page++, this.data.size)
       .then(data => {
         console.log(data);
         const subjects = data && data.subjects;
@@ -64,10 +65,11 @@ Page({
   onLoad(options) {
     // 加载
     wx.showLoading();
-    const { type, name } = options && { ...options };
+    const { type, name, ...other } = options && { ...options };
     this.setData({
       type,
-      name
+      name,
+      query: type === 'search' ? other.q : ''
     });
     this.loadMore();
   },
