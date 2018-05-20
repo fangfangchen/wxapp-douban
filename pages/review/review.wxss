@@ -1,0 +1,14 @@
+/* pages/review/review.wxss */
+.review {
+  padding: 30rpx 40rpx;
+}
+
+.review view {
+  text-indent: 56rpx;
+}
+
+.review-title {
+  font-size:48rpx;
+  margin-bottom:40rpx;
+  text-align:center;
+}

@@ -1,0 +1,45 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.history {
+  margin-bottom: 100rpx;
+}
+
+.history-title {
+  border-left:10rpx solid #eee;
+  padding-left:20rpx;
+  margin: 30rpx;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.history-item image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  background-color: #eee;
+}
+
+.history-item .time {
+  font-size: 32rpx;
+  color: #ddd;
+}

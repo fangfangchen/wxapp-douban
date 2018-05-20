@@ -4,7 +4,9 @@
     "pages/board/board",
     "pages/list/list",
     "pages/search/search",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/review/review"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +30,7 @@
         "selectedIconPath": "./images/search_fill.png"
       },
       {
-        "pagePath": "pages/search/search",
+        "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "./images/mine.png",
         "selectedIconPath": "./images/mine_fill.png"
