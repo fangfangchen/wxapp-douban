@@ -15,7 +15,7 @@
     "navigationBarTextStyle": "light"
   },
   "tabBar": {
-    "selectedColor": "black",
+    "selectedColor": "#000",
     "list": [
       {
         "pagePath": "pages/board/board",

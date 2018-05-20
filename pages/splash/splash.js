@@ -41,5 +41,12 @@ Page({
         console.log(e)
       }
     });
+  },
+  onShareAppMessage(res) {
+    console.log(res);
+    return {
+      title: '豆瓣电影',
+      path: '/pages/splash/splash'
+    }
   }
 })

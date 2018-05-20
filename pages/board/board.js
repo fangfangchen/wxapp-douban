@@ -1,9 +1,9 @@
 Page({
   data: {
     imgUrls:[
-       'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2517753454.webp',
-      'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2520301624.webp',
-      'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2519994468.webp'
+      "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2517753454.jpg",
+      "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2520331478.jpg",
+      "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518852413.jpg"
     ],
     boardLists: [
       {

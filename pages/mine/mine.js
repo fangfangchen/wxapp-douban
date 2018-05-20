@@ -26,7 +26,7 @@ Page({
         link: ''
       }, {
         id: 4,
-        url: '',
+        url: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510956726.jpg',
         name: '小萝莉的神猴大叔',
         time: '2018-03-07',
         link: 'https://zhuanlan.zhihu.com/p/34327169'
